@@ -16,7 +16,7 @@ class Nav extends Component {
       top: 0px;
       z-index:-1;
     `
-
+    let { titles } = this.props;
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <Background/>
@@ -39,7 +39,7 @@ class Nav extends Component {
             </li>
             <li className="nav-item">
               <a className="nav-link" target="_blank" href="https://instagram.com/coolturtle.nft_?r=nametag">
-                Instagram
+                {titles.instagram}
               </a>
             </li>
             <li className="nav-item">

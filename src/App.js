@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Sec1 from './components/Sec1';
 import background2 from "./images/bg02.png";
+import Title from './config/Title';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const AppBackgroundStyle = {
@@ -14,10 +15,12 @@ const AppBackgroundStyle = {
 }
 
 function App() {
+  let langConfig = Title[navigator.language];
+
   return (
     <div className="App" style={AppBackgroundStyle}>
-      <Nav/>
-      <Sec1/>
+      <Nav titles={langConfig}/>
+      <Sec1 titles={langConfig}/>
     </div>
   );
 }
