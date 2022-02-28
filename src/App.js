@@ -15,7 +15,11 @@ const AppBackgroundStyle = {
 }
 
 function App() {
-  let langConfig = Title[navigator.language];
+  let lang = navigator.language;
+  let langConfig = Title[lang];
+  
+  if(typeof langConfig === 'undefined')
+    langConfig = Title['en-US'];
 
   return (
     <div className="App" style={AppBackgroundStyle}>
