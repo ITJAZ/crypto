@@ -6,6 +6,7 @@
   position: absolute;
   top: 0px;
   z-index:-1;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.509);
 }
 
 .nav-custom{
@@ -14,9 +15,10 @@
 }
 
 .bg03{
-  background-image: url('../images/bg03.png');
-  width: 100%;
-  min-height: 1000px;
+  max-width: 100%;
+  max-height: 960px;
+  width: auto;
+  height: auto;
   z-index: -1;
 }
 .bg04{
@@ -39,10 +41,11 @@
   transition: .3s;
   min-height: 1.2em;
   min-width: 1em;
-  line-height: 2em;
   margin: .8em 1em;
 }
 .custom-link:hover{
-  color: white;
+  color: purple;
+  background-color: transparent;
+  border: 2px solid purple;
   font-size: 1.2em;
 }
