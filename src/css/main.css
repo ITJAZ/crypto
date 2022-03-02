@@ -49,3 +49,17 @@
   border: 2px solid purple;
   font-size: 1.2em;
 }
+.sec3-footer{
+  background-color:#1B1B6E;
+  text-align: left;
+  
+}
+.sec3-footer-text{
+  margin-left:10%;
+  line-height: 10px;
+  letter-spacing:1px;
+  color: white;
+}
+.DFKai{
+  font-family:DFKai;
+}

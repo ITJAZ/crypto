@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './css/main.css';
 import Nav from './components/Nav';
 import Sec1 from './components/Sec1';
+import Sec3 from './components/Sec3';
+
 import Title from './config/Title';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <div>
       <Nav titles={langConfig}/>
       <Sec1 titles={langConfig}/>
+      <Sec3 titles={langConfig}/>
     </div>
   );
 }
