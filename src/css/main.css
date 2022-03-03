@@ -31,7 +31,15 @@
   right: 5%;
   bottom: 1%;
 }
+.custom-link:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
 
+  color: purple;
+  background-color: transparent;
+  border: 2px solid purple;
+}
 .custom-link{
   border-radius: 5em;
   border: 2px solid white;
@@ -43,16 +51,14 @@
   min-width: 1em;
   margin: .8em 1em;
 }
-.custom-link:hover{
-  color: purple;
-  background-color: transparent;
-  border: 2px solid purple;
-  font-size: 1.2em;
-}
+
 .sec3-footer{
   background-color:#1B1B6E;
   text-align: left;
   
+}
+sec3-footer-row{
+  width: 100%;;
 }
 .sec3-footer-text{
   margin-left:10%;
@@ -60,6 +66,6 @@
   letter-spacing:1px;
   color: white;
 }
-.DFKai{
-  font-family:DFKai;
+.Kai{
+  font-family:DFKai-SB,STKaiti ;
 }
