@@ -8,6 +8,16 @@ export default {
     'answer2'   : '台灣全省食衣住行育樂',
     'answer3'   : '有關於海洋保育',
 
+    'sec2_lead1' : '【關於 CoolTurtle】',
+    'sec2_lead2' : '【CoolTurtle價值】',
+    'sec2_content1' : '由台灣藝術創作者發行，結合線下當地商家，並結合公益來發行。',
+    'sec2_content2' : 'CoolTurtle NFT總數7777張，並且在OpenSea網站上販售。',
+    'sec2_content3' : '每張NFT都是獨一無二的，且具收藏價值。',
+    'sec2_normal_info' : '普卡數量：4,764張',
+    'sec2_rare_info' : '稀有卡數量：2,000張',
+    'sec2_legendary_info' : '傳說卡數量：1,000張 合作賦能卡',
+    'sec2_special_info' : '特卡數量： 10張 特珠賦能卡(2張原創作者、1張D2 老闆卡)',
+
     'footer_lead1':'【獲得方法】',
     'footer_lead2':'【注意事項】',
     'footer_lead3':'【發售時間】',
@@ -27,6 +37,16 @@ export default {
     'answer1'   : '跟線下商家合作、實體化、活動、白名單',
     'answer2'   : '台灣全省食衣住行育樂',
     'answer3'   : '有關於海洋保育',
+
+    'sec2_lead1' : '【關於 CoolTurtle】',
+    'sec2_lead2' : '【CoolTurtle價值】',
+    'sec2_content1' : '由台灣藝術創作者發行，結合線下當地商家，並結合公益來發行。',
+    'sec2_content2' : 'CoolTurtle NFT總數7777張，並且在OpenSea網站上販售。',
+    'sec2_content3' : '每張NFT都是獨一無二的，且具收藏價值。',
+    'sec2_normal_info' : '普卡數量：4,764張',
+    'sec2_rare_info' : '稀有卡數量：2,000張',
+    'sec2_legendary_info' : '傳說卡數量：1,000張 合作賦能卡',
+    'sec2_special_info' : '特卡數量： 10張 特珠賦能卡(2張原創作者、1張D2 老闆卡)',
 
     'footer_lead1':'【獲得方法】',
     'footer_lead2':'【注意事項】',

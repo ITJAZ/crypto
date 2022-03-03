@@ -15,21 +15,19 @@
 }
 
 .bg03{
-  max-width: 100%;
-  max-height: 960px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 .bg04{
   z-index: 1;
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
   position: absolute;
   right: 5%;
-  bottom: 1%;
+  bottom: -8vh;
 }
 .custom-link:hover {
   -ms-transform: scale(1.1); 
@@ -55,7 +53,7 @@
 .sec3-footer{
   background-color:#1B1B6E;
   text-align: left;
-  
+  margin-bottom: 0px;
 }
 sec3-footer-row{
   width: 100%;;
