@@ -32,9 +32,9 @@
   bottom: 1%;
 }
 .custom-link:hover {
-  -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5); 
-  transform: scale(1.5); 
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
 
   color: purple;
   background-color: transparent;
@@ -61,7 +61,7 @@ sec3-footer-row{
   width: 100%;;
 }
 .sec3-footer-text{
-  margin-left:10%;
+  padding-left:10%;
   line-height: 10px;
   letter-spacing:1px;
   color: white;

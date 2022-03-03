@@ -4,7 +4,7 @@ export default class Sec3 extends Component {
     render() {
         let { titles } = this.props;
         return (
-            <footer className={`sec3-footer`}>
+            <footer className={`sec3-footer container-fluid`}>
              
                 <div className='row sec3-footer-row'>
                     <div className='sec3-footer-text Kai'>
