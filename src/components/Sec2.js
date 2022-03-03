@@ -9,6 +9,13 @@ class Sec2 extends Component {
       paddingLeft: "3%",
     };
 
+    let strokeWidth = 2;
+
+    let headStyle = {
+      'textShadow': `-${strokeWidth}px 0 #08a2ff, 0 ${strokeWidth}px #08a2ff, ${strokeWidth}px 0 #08a2ff, 0 -${strokeWidth}px #08a2ff`,
+      'color': 'white'
+    }
+
     return (
       <React.StrictMode>
         <div
@@ -20,9 +27,9 @@ class Sec2 extends Component {
           className="bg03"
         >
           <div className="container">
-            <span className="display-4">{titles.sec2_lead1}</span>
+            <span className="display-4" style={headStyle}>{titles.sec2_lead1}</span>
             <h4 style={contentStyle}>{titles.sec2_content1}</h4>
-            <span className="display-4">{titles.sec2_lead2}</span>
+            <span className="display-4" style={headStyle}>{titles.sec2_lead2}</span>
             <h4 style={contentStyle}>{titles.sec2_content2}</h4>
             <h4 style={contentStyle}>{titles.sec2_content3}</h4>
             <ul>

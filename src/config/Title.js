@@ -8,7 +8,7 @@ export default {
     'answer2'   : '台灣全省食衣住行育樂',
     'answer3'   : '有關於海洋保育',
 
-    'sec2_lead1' : '【關於 CoolTurtle】',
+    'sec2_lead1' : '【About CoolTurtle】',
     'sec2_lead2' : '【CoolTurtle價值】',
     'sec2_content1' : '由台灣藝術創作者發行，結合線下當地商家，並結合公益來發行。',
     'sec2_content2' : 'CoolTurtle NFT總數7777張，並且在OpenSea網站上販售。',
