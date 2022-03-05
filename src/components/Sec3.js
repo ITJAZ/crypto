@@ -6,7 +6,7 @@ export default class Sec3 extends Component {
       <footer className={`sec3-footer`}>
         <div className="container">
           <div className="row sec3-footer-row">
-            <div className="sec3-footer-text Kai">
+            <div className="sec3-footer-text">
               <h3 className="lead">
                 <strong>{titles.footer_lead1}</strong>
               </h3>
