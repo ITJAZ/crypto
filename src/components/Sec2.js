@@ -99,13 +99,13 @@ class DemoGallary1 extends Component {
 
     return (
       <div className="row">
-        <div class="col-sm text-center">
+        <div className="col-sm text-center">
           <img src={head01} style={headStyle} />
         </div>
-        <div class="col-sm text-center">
+        <div className="col-sm text-center">
           <img src={head02} style={headStyle} />
         </div>
-        <div class="col-sm text-center">
+        <div className="col-sm text-center">
           <img src={head03} style={headStyle} />
         </div>
       </div>
@@ -120,42 +120,35 @@ class DemoGallary2 extends Component {
       height: "auto",
       maxWidth: "200px",
       maxHeight: "200px",
-      border: "1px solid black",
+      border: "1px solid gray",
+      borderRadius: "2%",
+      boxShadow: "#343434 9px 7px 17px 6px",
     };
-    return (
-      <div className="row">
-        <div class="col-sm text-center">
-          <img src={head04} style={picStyle} />
+
+    let picsMap = {
+      head4 : head04,
+      head5 : head05,
+      head6 : head06,
+      head7 : head07,
+      head8 : head08,
+      head9 : head09,
+      head10 : head10,
+      head11 : head11,
+      head12 : head12,
+      head13 : head13,
+    }
+
+    let pics = [];
+
+    for (let i = 4; i < 14; i++) {
+      pics.push(
+        <div className="col-sm text-center">
+          <img src={picsMap[`head${i}`]} style={picStyle} />
         </div>
-        <div class="col-sm text-center">
-          <img src={head05} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head06} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head07} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head08} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head09} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head10} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head11} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head12} style={picStyle} />
-        </div>
-        <div class="col-sm text-center">
-          <img src={head13} style={picStyle} />
-        </div>
-      </div>
-    );
+      );
+    }
+
+    return (<div className="row">{pics}</div>);
   }
 }
 
