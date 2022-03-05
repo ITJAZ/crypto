@@ -22,6 +22,7 @@ export default class Sec3 extends Component {
                 <strong>{titles.footer_lead3}</strong>
               </h3>
               <p>{titles.footer_content6}</p>
+              <p>{titles.footer_content7}</p>
             </div>
           </div>
         </div>

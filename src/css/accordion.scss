@@ -41,6 +41,9 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   background-color: $accordion-bg;
   transition: .3s;
 }
+.accordion-collapse{
+  background-color: rgba(99, 99, 99, 0.447);
+}
 .accordion-button:not(.collapsed){
   background-color: rgba(99, 99, 99, 0.447);
   color: $black;
