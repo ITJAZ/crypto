@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import bg03 from "../images/bg03.png";
 import normalCardIcon from "../images/head-green.png";
 import rareCardIcon from "../images/head-pink.png";
 import legendaryCardIcon from "../images/head-yellow.png";

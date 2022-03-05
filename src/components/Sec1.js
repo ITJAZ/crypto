@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import bg03 from '../images/bg03.png';
 import bg04 from '../images/bg04.png';
 class Sec1 extends Component {
 
