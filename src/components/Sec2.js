@@ -23,7 +23,7 @@ class Sec2 extends Component {
     let { titles } = this.props;
 
     let contentStyle = {
-      paddingLeft: "3%",
+      // paddingLeft: "3%",
     };
 
     let turtleHeadIconStyle = {
@@ -34,53 +34,54 @@ class Sec2 extends Component {
     };
 
     let strokeWidth = 2;
+    let strokeColor = "#08a2ff";
 
     let headStyle = {
       textShadow: `
-      -${strokeWidth}px 0 #08a2ff,
-       0 ${strokeWidth}px #08a2ff,
-        ${strokeWidth}px 0 #08a2ff,
-         0 -${strokeWidth}px #08a2ff`,
+      -${strokeWidth}px 0 ${strokeColor},
+      0 ${strokeWidth}px ${strokeColor},
+      ${strokeWidth}px 0 ${strokeColor},
+      0 -${strokeWidth}px ${strokeColor}`,
       color: "white",
-      paddingTop: "1%",
+      marginLeft: "-2%",
     };
 
     return (
-      <React.StrictMode>
-        <div className="container">
-          <span className="display-4" style={headStyle}>
-            {titles.sec2_lead1}
-          </span>
-          <h4 style={contentStyle}>{titles.sec2_content1}</h4>
-          <DemoGallary1 />
-          <span className="display-4" style={headStyle}>
-            {titles.sec2_lead2}
-          </span>
-          <h4 style={contentStyle}>{titles.sec2_content2}</h4>
-          <h4 style={contentStyle}>{titles.sec2_content3}</h4>
-          <p style={contentStyle}>
-            <img src={normalCardIcon} style={turtleHeadIconStyle} />
-            {titles.sec2_normal_info}
-          </p>
-          <p style={contentStyle}>
-            <img src={rareCardIcon} style={turtleHeadIconStyle} />
-            {titles.sec2_rare_info}
-          </p>
-          <p style={contentStyle}>
-            <img src={legendaryCardIcon} style={turtleHeadIconStyle} />
-            {titles.sec2_legendary_info}
-          </p>
-          <p style={contentStyle}>
-            <img src={speicalCardIcon} style={turtleHeadIconStyle} />
-            {titles.sec2_special_info}
-          </p>
-          <DemoGallary2 />
-          <fieldset className="fieldset">
-            <legend>Q&A</legend>
-            <Accordion titles={titles} />
-          </fieldset>
-        </div>
-      </React.StrictMode>
+      <div
+        className="container"
+        style={{
+          paddingTop: "2%",
+          paddingBottom: "2%",
+        }}
+      >
+        <h1 style={headStyle}>{titles.sec2_lead1}</h1>
+        <h4 style={contentStyle}>{titles.sec2_content1}</h4>
+        <DemoGallary1 />
+        <h1 style={headStyle}>{titles.sec2_lead2}</h1>
+        <h4 style={contentStyle}>{titles.sec2_content2}</h4>
+        <h4 style={contentStyle}>{titles.sec2_content3}</h4>
+        <p style={contentStyle}>
+          <img src={normalCardIcon} style={turtleHeadIconStyle} />
+          {titles.sec2_normal_info}
+        </p>
+        <p style={contentStyle}>
+          <img src={rareCardIcon} style={turtleHeadIconStyle} />
+          {titles.sec2_rare_info}
+        </p>
+        <p style={contentStyle}>
+          <img src={legendaryCardIcon} style={turtleHeadIconStyle} />
+          {titles.sec2_legendary_info}
+        </p>
+        <p style={contentStyle}>
+          <img src={speicalCardIcon} style={turtleHeadIconStyle} />
+          {titles.sec2_special_info}
+        </p>
+        <DemoGallary2 />
+        <fieldset className="fieldset">
+          <legend>Q&A</legend>
+          <Accordion titles={titles} />
+        </fieldset>
+      </div>
     );
   }
 }
@@ -122,40 +123,38 @@ class DemoGallary2 extends Component {
       border: "1px solid black",
     };
     return (
-      <React.StrictMode>
-        <div className="row">
-          <div class="col-sm text-center">
-            <img src={head04} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head05} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head06} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head07} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head08} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head09} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head10} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head11} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head12} style={picStyle} />
-          </div>
-          <div class="col-sm text-center">
-            <img src={head13} style={picStyle} />
-          </div>
+      <div className="row">
+        <div class="col-sm text-center">
+          <img src={head04} style={picStyle} />
         </div>
-      </React.StrictMode>
+        <div class="col-sm text-center">
+          <img src={head05} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head06} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head07} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head08} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head09} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head10} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head11} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head12} style={picStyle} />
+        </div>
+        <div class="col-sm text-center">
+          <img src={head13} style={picStyle} />
+        </div>
+      </div>
     );
   }
 }
@@ -164,15 +163,15 @@ class Accordion extends Component {
   render() {
     let { titles } = this.props;
     return (
-      <div className="accordion" id="accordionExample">
+      <div className="accordion" id="accordionQA">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
-              className="accordion-button"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               {titles.question1}
@@ -180,9 +179,9 @@ class Accordion extends Component {
           </h2>
           <div
             id="collapseOne"
-            className="accordion-collapse collapse show"
+            className="accordion-collapse collapse"
             aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#accordionQA"
           >
             <div className="accordion-body">{titles.answer1}</div>
           </div>
@@ -204,7 +203,7 @@ class Accordion extends Component {
             id="collapseTwo"
             className="accordion-collapse collapse"
             aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#accordionQA"
           >
             <div className="accordion-body">{titles.answer2}</div>
           </div>
@@ -226,7 +225,7 @@ class Accordion extends Component {
             id="collapseThree"
             className="accordion-collapse collapse"
             aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#accordionQA"
           >
             <div className="accordion-body">{titles.answer3}</div>
           </div>
