@@ -9,6 +9,12 @@ import Sec3 from './components/Sec3';
 import bg03 from './images/bg03.png'
 
 import Title from './config/Title';
+import {Web3ReactProvider} from '@web3-react/core';
+import Web3 from "web3";
+
+function getLibrary(provider){
+  return new Web3(provider);
+}
 
 function App() {
   let lang = navigator.language;
@@ -24,7 +30,10 @@ function App() {
       'backgroundSize' : 'cover',
       'backgroundPosition' : 'center center'
     }}>
-      <Nav titles={langConfig}/>
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <Nav titles={langConfig}/>
+      </Web3ReactProvider>
+
       <Sec1 titles={langConfig}/>
       <Sec2 titles={langConfig}/>
       <Sec3 titles={langConfig}/>

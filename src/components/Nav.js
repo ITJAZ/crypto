@@ -1,8 +1,10 @@
 import background1 from "../images/bg01.png";
 import React, { Component } from "react";
+import WalletTool from './wallet/walletTool';
 class Nav extends Component {
+
   render() {
-    let { titles } = this.props;
+    let { titles } = this.props;    
     return (
       <nav
         className={`navbar navbar-expand-lg navbar-light sticky-top nav-custom`}
@@ -44,8 +46,13 @@ class Nav extends Component {
               <a className={`btn custom-link`}>OpenSea</a>
             </li>
             <li className="nav-item">
-              <a className={`btn custom-link`}>Connect</a>
+              {WalletTool.isActive? 
+              <a className={`btn custom-link`} onClick={WalletTool.connect}> Connect</a>
+              :      
+              <a className={`btn custom-link`} onClick={WalletTool.disConnect}> Disconnect</a>
+              }
             </li>
+            {WalletTool.isActive ? <span>Connecter:{WalletTool.getAccount}</span> : <span>no body</span>}
           </ul>
         </div>
       </nav>
