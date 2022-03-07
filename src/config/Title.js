@@ -26,7 +26,8 @@ export default {
     'footer_content3':'● 在販售時間前，在MetaMask放入足夠的以太幣，時間到時將會有購買的按鈕，點擊即可開始NFT的鑄造。 ',
     'footer_content4':'● 白單發售鑄造價格:0.08ETH。 ',
     'footer_content5':'● 公開發售鑄造價格:0.1ETH。 ',
-    'footer_content6':'● 公開發售將於2022年5月25日08時10分後開始。 ',
+    'footer_content6':'● 白單發售將於2022年5月24日08時10分後開始。 ',
+    'footer_content7':'● 公開發售將於2022年5月25日08時10分後開始。 ',
 
   },
   'zh-TW':{
@@ -56,6 +57,7 @@ export default {
     'footer_content3':'● 在販售時間前，在MetaMask放入足夠的以太幣，時間到時將會有購買的按鈕，點擊即可開始NFT的鑄造。 ',
     'footer_content4':'● 白單發售鑄造價格:0.08ETH。 ',
     'footer_content5':'● 公開發售鑄造價格:0.1ETH。 ',
-    'footer_content6':'● 公開發售將於2022年5月25日08時10分後開始。 ',
+    'footer_content6':'● 白單發售將於2022年5月24日08時10分後開始。 ',
+    'footer_content7':'● 公開發售將於2022年5月25日08時10分後開始。 ',
   },
 }
