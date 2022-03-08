@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.esm"
-import './css/main.css';
+import './css/main.scss';
 import './css/accordion.scss'
 import Nav from './components/Nav';
 import Sec1 from './components/Sec1';
