@@ -142,7 +142,7 @@ class DemoGallary2 extends Component {
 
     for (let i = 4; i < 14; i++) {
       pics.push(
-        <div className="col-sm text-center">
+        <div key={i} className="col-sm text-center">
           <img src={picsMap[`head${i}`]} style={picStyle} />
         </div>
       );
