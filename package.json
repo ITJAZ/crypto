@@ -8,19 +8,15 @@
     "@testing-library/user-event": "^13.5.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
-    "assert": "^2.0.0",
     "bootstrap": "^5.1.3",
+    "crypto-js": "^4.1.1",
+    "ethers": "^5.5.4",
     "fs": "^0.0.1-security",
-    "https-browserify": "^1.0.0",
     "os": "^0.1.2",
-    "os-browserify": "^0.3.0",
     "react": "^17.0.2",
-    "react-app-rewired": "^2.2.1",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "sass": "^1.49.9",
-    "stream-browserify": "^3.0.0",
-    "stream-http": "^3.2.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4",
     "web3": "^1.7.1"
@@ -48,5 +44,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^5.7.1",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
   }
 }
