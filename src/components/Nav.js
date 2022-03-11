@@ -45,14 +45,7 @@ class Nav extends Component {
             <li className="nav-item">
               <a className={`btn custom-link`}>OpenSea</a>
             </li>
-            <li className="nav-item">
-              {!WalletTool.isActive? 
-              <a key='connect' className={`btn custom-link`} onClick={WalletTool.connect}> Connect</a>
-              :      
-              <a key='disconnect' className={`btn custom-link`} onClick={WalletTool.disConnect}> Disconnect</a>
-              }
-            </li>
-            {WalletTool.isActive ? <span>Connecter:{WalletTool.getAccount}</span> : <span>no body</span>}
+            <WalletTool/>
           </ul>
         </div>
       </nav>
