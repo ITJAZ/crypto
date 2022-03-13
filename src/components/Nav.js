@@ -11,16 +11,16 @@ class Nav extends Component {
         <button
           type="button"
           className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#customNavbarCollapse"
-          aria-controls="customNavbarCollapse"
+          data-bs-toggle="collapse"
+          data-bs-target="#custom-navbar-collapse"
+          aria-controls="custom-navbar-collapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <img src={background1} className={`nav-bg`} />
-        <div id="customNavbarCollapse" className="collapse navbar-collapse">
+        <div id="custom-navbar-collapse" className="collapse navbar-collapse">
           <ul className={`navbar-nav mr-auto`}>
             <li className="nav-item">
               <a className={`btn custom-nav-link`}>Cool Turtle</a>
