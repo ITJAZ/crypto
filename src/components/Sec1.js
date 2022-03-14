@@ -14,11 +14,16 @@ class Sec1 extends Component {
         }}>
           <img src={bg04} className={`bg04`}/>
           <img src={logo1} className={`logo logo1`}/>
-          <img src={logo2} className={`logo logo2`}/>
+          <img src={logo2} className={`logo logo2`} onClick={()=>mintNFT()}/>
 
         </div>
       </React.StrictMode>
     );
   }
 }
+
+function mintNFT(){
+  console.log('NFT MINTED');
+}
+
 export default Sec1;

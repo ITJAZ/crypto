@@ -23,22 +23,19 @@ function App() {
   if (typeof langConfig === "undefined") langConfig = Title["en-US"];
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bg03})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-      }}
-    >
-      <Web3ReactProvider getLibrary={getLibrary}>
-        <Nav titles={langConfig} />
-      </Web3ReactProvider>
-
-      <Sec1 titles={langConfig} />
-      <Sec2 titles={langConfig} />
-      <Sec3 titles={langConfig} />
-    </div>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <div style={{
+        'backgroundImage' : `url(${bg03})`,
+        'backgroundRepeat' : 'no-repeat',
+        'backgroundSize' : 'cover',
+        'backgroundPosition' : 'center center'
+      }}>      
+        <Nav titles={langConfig}/>
+        <Sec1 titles={langConfig}/>
+        <Sec2 titles={langConfig}/>
+        <Sec3 titles={langConfig}/>
+      </div>
+    </Web3ReactProvider>
   );
 }
 
