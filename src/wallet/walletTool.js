@@ -1,12 +1,17 @@
 import { useWeb3React } from "@web3-react/core";
 import {injected} from './connector';
 
+import {useConfirmationDialog} from './WarnLoseDialog'
 export default function WalletTool(){
     const {active, account, library, connector, activate, deactivate} = useWeb3React();
-
+    const { getConfirmation } = useConfirmationDialog();
     async function connect(){
       try{
-        debugger;
+        if (typeof window.ethereum) {
+          await getConfirmation(true);
+        }else{
+          alert('y')
+        }
         await activate(injected);
       }catch(ex){
         console.log(ex);
@@ -19,7 +24,6 @@ export default function WalletTool(){
         console.log(ex);
       }
     }
-
     return (
       <li className="nav-item">
         {! active? 
