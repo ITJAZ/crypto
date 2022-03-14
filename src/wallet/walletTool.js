@@ -23,9 +23,9 @@ export default function WalletTool(){
     return (
       <li className="nav-item">
         {! active? 
-        <a key='connect' className={`btn custom-link`} onClick={connect}> Connect</a>
+        <a key='connect' className={`btn custom-nav-link`} onClick={connect}> Connect</a>
         :      
-        <a key='disconnect' className={`btn custom-link`} onClick={disConnect}> Disconnect</a>
+        <a key='disconnect' className={`btn custom-nav-link`} onClick={disConnect}> Disconnect</a>
         }
         {active ? <span> Connecter is: {account}</span> : <span>no body</span>}
       </li>
