@@ -1,25 +1,46 @@
-.nav-bg{
+.nav-bg {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 8vh;
   position: absolute;
   top: 0px;
-  z-index:-1;
+  z-index: -1;
   border-bottom: 1px solid rgba(128, 128, 128, 0.509);
 }
 
-.nav-custom{
-  height : 8vh;
+.custom-nav-link {
+  border-radius: 5em;
+  border: 2px solid white;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  min-height: 1.2em;
+  min-width: 1em;
+  margin: 0.8em 1em;
+
+  &:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  
+    color: purple;
+    background-color: transparent;
+    border: 2px solid purple;
+  }
+}
+.nav-custom {
+  height: 8vh;
   background-color: transparent;
 }
 
-.bg03{
+.bg03 {
   width: 100%;
   height: 100%;
   z-index: -1;
 }
-.bg04{
+.bg04 {
   z-index: 1;
   max-width: 120%;
   max-height: 120%;
@@ -29,10 +50,11 @@
   right: 0%;
 }
 
-.logo{
+.logo {
   z-index: 2;
 }
-.logo.logo1{
+.logo.logo1 {
+  cursor: pointer;
   position: absolute;
   right: 0%;
   top: 50%;
@@ -41,8 +63,7 @@
   max-width: 100%;
   max-height: 100%;
 }
-.logo.logo2{
-  cursor: pointer;
+.logo.logo2 {
   position: absolute;
   right: 0%;
   top: 72%;
@@ -52,39 +73,18 @@
   max-height: 100%;
 }
 
-.custom-link:hover {
-  -ms-transform: scale(1.1); 
-  -webkit-transform: scale(1.1); 
-  transform: scale(1.1); 
-
-  color: purple;
-  background-color: transparent;
-  border: 2px solid purple;
-}
-.custom-link{
-  border-radius: 5em;
-  border: 2px solid white;
-  background-color: purple;
-  color: white;
-  text-decoration: none;
-  transition: .3s;
-  min-height: 1.2em;
-  min-width: 1em;
-  margin: .8em 1em;
-}
-
-.sec3-footer{
-  background-color:#1B1B6E;
+.sec3-footer {
+  background-color: #1b1b6e;
   text-align: left;
   margin-bottom: 0px;
 }
-sec3-footer-row{
-  width: 100%;;
+sec3-footer-row {
+  width: 100%;
 }
-.sec3-footer-text{
-  padding-left:10%;
+.sec3-footer-text {
+  padding-left: 10%;
   line-height: 10px;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -92,6 +92,6 @@ sec3-footer-row{
   background-color: transparent;
 }*/
 
-body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
