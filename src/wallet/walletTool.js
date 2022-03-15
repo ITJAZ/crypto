@@ -18,7 +18,7 @@ export default function WalletTool(){
 
     async function connect(){
       try{
-        if (! typeof window.ethereum) {
+        if (typeof window.ethereum == 'undefined') {
           missingTool();
         }else{
           await activate(injected);

@@ -12,7 +12,7 @@ const showDialog = (icon, title, content, footer, className) => {
     showConfirmButton: false,
     showCloseButton: true,
     footer: footer,
-    allowOutsideClick: () => AlertSwal.close(),
+    //allowOutsideClick: () => AlertSwal.close(),
   });
 };
 
